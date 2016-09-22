@@ -1,0 +1,43 @@
+.back{
+	background-image: url("http://il3.picdn.net/shutterstock/videos/9568208/thumb/1.jpg");
+}
+.caja1{
+	margin-top: 5%;
+}
+.none{
+	display: none;
+}
+.up{
+	padding: 2% 78% 2% 1%;
+	background-color: #0094AE;
+	border-radius: 6px;
+	text-decoration: none;
+	color: black;
+	margin-top: 1%;
+}
+.nope{
+	text-decoration: none;
+}
+.linkeable{
+	width: 30%;
+    box-sizing: border-box;
+    padding: 0.5% 1% ;
+    background-color: #0094AE;
+    border-radius: 6px;
+    margin-top: 1%;
+}
+.formu{
+	background-color: #E2E4E6;
+	width: 30%;
+	padding: 0.5%;
+	box-sizing: border-box;
+	border-radius: 6px;
+}
+.boton{
+	padding: 1% 5%;
+	margin-top: 2%;
+}
+.rellenar{
+	padding: 1.3% 49% 1% 2%;
+	border-radius: 6px;
+}
