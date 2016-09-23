@@ -1,4 +1,5 @@
 .back{
+	white-space: nowrap;
 	background-image: url("http://il3.picdn.net/shutterstock/videos/9568208/thumb/1.jpg");
 }
 .barra{
@@ -22,15 +23,24 @@
 	color: black;
 	margin-top: 1%;
 }
+.newup{
+	display: inline-block;
+	padding: 2% 21% 2% 1%;
+	background-color: white;
+	border-radius: 6px;
+	opacity: 0.6;
+	text-decoration: none;
+	color: black;
+	margin-top: 1%;
+}
 .nope{
 	text-decoration: none;
 }
 .linkeable{
 	background-color: white;
 	border-radius: 6px;
-	width: 30%;
     box-sizing: border-box;
-    padding: 0.5% 1% ;
+    padding: 10px 90px 10px 20px ;
     opacity: 0.6;
     border-radius: 6px;
     margin-top: 1%;
@@ -38,8 +48,7 @@
 .formu{
 	background-color: #5F282B;
 	opacity: 0.8;
-	width: 30%;
-	padding: 0.5%;
+	padding: 4%;
 	box-sizing: border-box;
 	border-radius: 6px;
 }
@@ -50,6 +59,9 @@
 	border: 1px solid #8D5E6E;
 }
 .rellenar{
-	padding: 1.3% 49% 1% 2%;
 	border-radius: 6px;
+}
+
+.papa{
+	display: inline-block;
 }
