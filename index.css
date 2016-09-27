@@ -23,7 +23,13 @@
 	color: black;
 	margin-top: 1%;
 }
-.newup{
+inline-block {
+	display: inline-block;
+	}
+.float-left{
+	float: left;
+}
+/*.newup{
 	display: inline-block;
 	padding: 2% 21% 2% 1%;
 	background-color: white;
@@ -32,7 +38,7 @@
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
-}
+
 .newup2{
 	display: block;
 	padding: 2% 21% 2% 1%;
@@ -42,7 +48,7 @@
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
-}
+}*/
 .nope{
 	text-decoration: none;
 }
