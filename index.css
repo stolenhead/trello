@@ -15,7 +15,7 @@
 	display: none;
 }
 .up{
-	padding: 2% 74% 2% 1%;
+	
 	background-color: white;
 	opacity: 0.6;
 	text-decoration: none;
@@ -27,7 +27,11 @@ inline-block {
 .float-left{
 	float: left;
 }
-/*.newup{
+.form{
+	 margin-left: 3%;
+    margin-right: 3%;
+}
+.newup{
 	display: inline-block;
 	padding: 2% 21% 2% 1%;
 	background-color: white;
@@ -36,22 +40,32 @@ inline-block {
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
-<<<<<<< HEAD
 }
-.newups{
-=======
-
-.newup2{
->>>>>>> b7545d2255d6cbee71dbacfb6b72e8e5a613fa7f
+.block{
 	display: block;
+}
+.newup2{
+	display: inline-block;
 	padding: 2% 21% 2% 1%;
 	background-color: white;
+	border-radius: 6px;
+	opacity: 0.6;
+	float: left;
+	text-decoration: none;
+	color: black;
+	margin-top: 1%;
+    width: 200px;
+    margin-left: 1%;
+}
+.area{
+	display: block;
+	background-color: red;
 	border-radius: 6px;
 	opacity: 0.6;
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
-}*/
+}
 .nope{
 	text-decoration: none;
 }
@@ -62,7 +76,9 @@ inline-block {
     padding: 10px 90px 10px 20px ;
     opacity: 0.6;
     border-radius: 6px;
-    margin-top: 1%;
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .formu{
 	background-color: #5F282B;
@@ -77,6 +93,12 @@ inline-block {
 	background-color: #8D5E6E;
 	border: 1px solid #8D5E6E;
 }
+.boton2{
+	padding: 1% 5%;
+	margin-top: 2%;
+	background-color: #8D5E6E;
+	border: 1px solid #8D5E6E;
+}
 .rellenar{
 	border-radius: 6px;
 }
@@ -84,9 +106,12 @@ inline-block {
 .papa{
 	display: inline-block;
 	border-radius: 6px;
+	 margin-left: 1%;
 }
 .tarjetas{
 	display: inline-block;
 	float: left;
 	border-radius: 6px;
+	margin-left: 3%;
+    margin-right: 3%;
 }
