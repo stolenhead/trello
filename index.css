@@ -21,7 +21,13 @@
 	text-decoration: none;
 	color: black;
 }
-.newup{
+inline-block {
+	display: inline-block;
+	}
+.float-left{
+	float: left;
+}
+/*.newup{
 	display: inline-block;
 	padding: 2% 21% 2% 1%;
 	background-color: white;
@@ -30,8 +36,13 @@
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
+<<<<<<< HEAD
 }
 .newups{
+=======
+
+.newup2{
+>>>>>>> b7545d2255d6cbee71dbacfb6b72e8e5a613fa7f
 	display: block;
 	padding: 2% 21% 2% 1%;
 	background-color: white;
@@ -40,7 +51,7 @@
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
-}
+}*/
 .nope{
 	text-decoration: none;
 }

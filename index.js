@@ -1,3 +1,4 @@
+
 var linky =document.getElementById("linky");//
 var boton =document.getElementById("boton");//
 var forms =document.getElementById("formu");//
@@ -34,9 +35,6 @@ window.addEventListener("load", function() {
       forms.classList.add("none");
       //newDiv.addEventListener("click", clickeable);
     };
-    newDiv.addEventListener("click", function() {
-            addTextArea(this);
   });
     
-});
- 
+
