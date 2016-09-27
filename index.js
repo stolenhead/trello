@@ -1,50 +1,42 @@
-
-var board = document.getElementById("clicky");
-var linky =document.getElementById("linky");
-var boton =document.getElementById("boton");
-var forms =document.getElementById("formu");
-var padre=document.getElementById("linky");
-var padre2=document.getElementById("papa2");
+var linky =document.getElementById("linky");//
+var boton =document.getElementById("boton");//
+var forms =document.getElementById("formu");//
 var input =document.getElementById("input");
+var contenedorPapa = document.getElementById("contenedor");
 
 window.addEventListener("load", function() {
-	board.addEventListener("click", boards);
+	linky.addEventListener("click", boards);
     function boards() {
-      board.classList.add("none");
       linky.classList.add("none");
       forms.classList.remove("none");
+      input.value= "";
     };
+
     boton.addEventListener("click",botons);
     function botons(e){
       e.preventDefault();
         crear();
-        añadir();
+        //añadir();
     }; 
     function crear(){  
-      forms.classList.add("none");
-      board.classList.remove("none");
-      linky.classList.remove("none");
-      linky.innerHTML=input.value;
+      var tarjetas = document.createElement("div");
+      contenedorPapa.insertBefore(tarjetas, contenedorPapa.lastElementChild);
+      tarjetas.classList.add("tarjetas");
       var newDiv =document.createElement("div");
       newDiv.innerHTML="<a>Add Card..</a>";
-      padre.appendChild(newDiv);
-      newDiv.classList.toggle("up");
-      newDiv.addEventListener("click", clickeable);
+      var nombreLista = document.createElement("div");
+      nombreLista.innerHTML= input.value;
+      nombreLista.classList.add("up");
+      tarjetas.appendChild(nombreLista);
+      tarjetas.appendChild(newDiv);
+      newDiv.classList.add("up");
+      linky.classList.remove("none");
+      forms.classList.add("none");
+      //newDiv.addEventListener("click", clickeable);
     };
-    function añadir(){
-    	var contenedor=document.getElementById("contenedor");
-      var padre3 =document.createElement("section");
-      contenedor.appendChild(padre3);
-      padre3.classList.toggle("newup");
-      var aparecer =document.getElementById("clicky");
-      aparecer.classList.toggle("newup2");
-      padre3.appendChild(aparecer);
-    };
-    function clickeable() {
-    newDiv.classList.add("none");
-  };
-    function clickeable() {
-    newDiv.classList.add("none");
-  };
+    newDiv.addEventListener("click", function() {
+            addTextArea(this);
+  });
+    
 });
  
