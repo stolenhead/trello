@@ -32,7 +32,6 @@ inline-block {
     margin-right: 3%;
 }
 .newup{
-	display: inline-block;
 	padding: 2% 21% 2% 1%;
 	background-color: white;
 	border-radius: 6px;
@@ -45,12 +44,11 @@ inline-block {
 	display: block;
 }
 .newup2{
-	display: inline-block;
+	
 	padding: 2% 21% 2% 1%;
-	background-color: white;
+	background-color: red;
 	border-radius: 6px;
-	opacity: 0.6;
-	float: left;
+	opacity: 0.8;
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
@@ -61,7 +59,7 @@ inline-block {
 	display: block;
 	background-color: red;
 	border-radius: 6px;
-	opacity: 0.6;
+	opacity: 0.8;
 	text-decoration: none;
 	color: black;
 	margin-top: 1%;
@@ -74,7 +72,7 @@ inline-block {
 	border-radius: 6px;
     box-sizing: border-box;
     padding: 10px 90px 10px 20px ;
-    opacity: 0.6;
+    opacity: 0.8;
     border-radius: 6px;
     margin-top: 7%;
     margin-left: 3%;
@@ -87,6 +85,14 @@ inline-block {
 	box-sizing: border-box;
 	border-radius: 6px;
 }
+.formu2{
+	background-color: #5F282B;
+	opacity: 0.8;
+	padding: 4%;
+	box-sizing: border-box;
+	border-radius: 6px;
+	height: 100px;
+}
 .boton{
 	padding: 1% 5%;
 	margin-top: 2%;
@@ -95,23 +101,35 @@ inline-block {
 }
 .boton2{
 	padding: 1% 5%;
-	margin-top: 2%;
 	background-color: #8D5E6E;
 	border: 1px solid #8D5E6E;
+	float: left;
 }
 .rellenar{
 	border-radius: 6px;
 }
-
+.rellenar2{
+	border-radius: 6px;
+	width: 90%;
+}
 .papa{
 	display: inline-block;
 	border-radius: 6px;
 	 margin-left: 1%;
+	 margin-top:2%;
 }
 .tarjetas{
-	display: inline-block;
-	float: left;
+	background-color: white;
 	border-radius: 6px;
-	margin-left: 3%;
-    margin-right: 3%;
+    box-sizing: border-box;
+    padding: 10px 90px 10px 20px ;
+    opacity: 0.8;
+    border-radius: 6px;
+    margin-top: 3%;
+    margin-left: 3%;
+	display: inline-block;
+	vertical-align: top;
+}
+.none{
+	display: none;
 }
