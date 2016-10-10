@@ -28,6 +28,11 @@ function crear(){
   var newDiv =document.createElement("div");  
   var tarjetas = document.createElement("div");
   tarjetas.addEventListener("dragover", arrastrarSobre);
+   function arrastrarSobre(e) {
+      e.preventDefault();
+      crearDivInvisible();
+      }
+      
   tarjetas.addEventListener("drop", soltar);
   tarjetas.addEventListener("dragenter", entraArrastrar);
     
@@ -78,26 +83,20 @@ function crear(){
       divi.setAttribute("id","movible"+contador);
       divi.addEventListener("dragstart", empiezaArrastrar);
       divi.addEventListener("dragend", terminaArrastrar);
+      //divi2=crearDivInvisible();
       contador++;
       //tarjetas.appendChild(divi);
       tarjetas.insertBefore(divi,tarjetas.lastElementChild.previousElementSibling);
       div2.classList.add("none");
-    
-    
-   
-    
-    
-    
-    //tarjetas[i].addEventListener("dragleave", dejaArrastrar);
-   
-    
+     
+    //tarjetas[i].addEventListener("dragleave", dejaArrastrar); 
    }
   }
       //display none
 }
 function empiezaArrastrar(e) {
   e.dataTransfer.setData("text", this.id);
-  this.style.opacity = "0.4";
+  this.classList.add("opacity");
 }
 
 function entraArrastrar(e) {
@@ -105,14 +104,13 @@ function entraArrastrar(e) {
 }
 
 function dejaArrastrar(e) {
-  this.classList.remove("over");
+ 
 }
 
-function arrastrarSobre(e) {
-  e.preventDefault();
-}
+
 
 function soltar(e) {
+
   var idArrastrado = e.dataTransfer.getData("text");
   var elementoArrastrado = document.getElementById(idArrastrado);
   var temporal = this.innerHTML;
@@ -124,45 +122,14 @@ function soltar(e) {
 
 function terminaArrastrar(e) {
   this.style.opacity = null;
+   this.classList.remove("opacity");
 }
-        
-       /* var newBoton =document.createElement("button");
-        newForm.insertBefore(newBoton,newForm.childNodes[1]);
-        var botonTxt = document.createTextNode("Añadir");
-        newBoton.appendChild(botonTxt);
-        newBoton.classList.add("boton2");
-        newBoton.setAttribute("type","submit");
-        area.focus();
-      function botonAdd(){
-        var newBoton =document.createElement("button");
-        newForm.insertBefore(newBoton,newForm.childNodes[1]);
-        var botonTxt = document.createTextNode("Añadir");
-        newBoton.appendChild(botonTxt);
-        newBoton.classList.add("boton2");
-        
-        area.focus();
-      };*/
+ 
 
-     /* var botonBoton =document.getElementsByClassName("boton2") ;
-      var form2=document.getElementsByClassName("form");
-      for(var i= 0; i < botonBoton.length; i++){
-        botonBoton[i].addEventListener("click",function(e){
-          e.preventDefault();
-          var texto=area.value;
-          var divi =document.createElement("div");
-          divi.innerHTML = texto;
-          form2.classList.add("none");
-          form2.classList.remove("block");
-          document.querySelector(".tarjeta").classList.remove("none");
-          form2.parentElement.appendChild(divi);
-         
-          divi.classList.add("up");
-          divi.parentElement.appendChild(form2);
-        });
-      }*/
-      
+   
 
 
+    
 
 
    

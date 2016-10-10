@@ -133,3 +133,13 @@ inline-block {
 .none{
 	display: none;
 }
+.azul{
+	background-color: gray;
+}
+.opacity{
+	background-color:yellow;
+	opacity: 0.4;
+	 transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+}
