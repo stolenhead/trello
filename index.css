@@ -143,3 +143,27 @@ inline-block {
     -moz-transform: rotate(3deg);
     -webkit-transform: rotate(3deg);
 }
+.tableros{
+	display: inline-block;
+	position: relative;
+	margin-right: 9em;
+	background-color: transparent !important;
+	border-color:  red !important;
+}
+.buscador ,.buscar ,.trello-logo ,.perfil,.ico ,.globe,.mas{
+	display: inline-block;
+	background-color: transparent !important;
+	border-color:red !important;
+}
+.izquierda{
+	display: inline-block;
+	position: relative;
+	margin-left: 30%;
+}
+.buscador{
+	position: relative;
+	margin-right: 10%;
+}
+header{
+	text-align: center;
+}
